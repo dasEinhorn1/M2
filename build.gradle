@@ -1,0 +1,23 @@
+defaultTasks '<task>'
+
+apply plugin: 'java'
+
+dependencies {
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '3.6.7.Final'
+	  testCompile group: 'junit', name: 'junit', version: '4.+'
+}
+
+version = '1.0'
+mainClassName='HelloWorld'
+
+jar {
+	manifest {
+    attributes('Implementation-Title' : 'Gradle Quickstart' ,
+     'Implementation-Version' : version,
+     'Main-Class' : 'HelloWorld')
+  }
+	manifest {
+		attributes("<attribute>": "______",
+        		   "<attribute>": "_______")
+	}
+}
