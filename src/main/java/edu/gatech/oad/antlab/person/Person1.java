@@ -1,5 +1,3 @@
-package edu.gatech.oad.antlab.person;
-
 /**
  *  A simple class for person 1
  *  returns their name and a
@@ -17,7 +15,7 @@ public class Person1 {
 	 * @param pname the person's real name
 	 */
   public Person1(String pname) {
-    name = pname;
+    name = "pname";
   }
   	/**
 	 * This method should take the string
@@ -31,7 +29,16 @@ public class Person1 {
 	 */
 	private String calc(String input) {
 	  //Person 1 put your implementation here
-	  return null;
+	  String frontPart = "";
+	  String backPart = "";
+	  for (int i = 0; i < input.length(); i++) {
+	  	if (i < 2) {
+	  	  frontPart += input.charAt(i);
+	  	} else {
+	  	  backPart += input.charAt(i);
+	  	}
+	  }
+	  return backPart + frontPart;
 	}
 	
 	/**
