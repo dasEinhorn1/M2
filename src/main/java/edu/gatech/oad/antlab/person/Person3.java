@@ -4,7 +4,7 @@ package edu.gatech.oad.antlab.person;
  *  returns their name and a
  *  reversed string
  *
- *  @author  Bob
+ *  @author  Bob (Jeffrey Wongo)
  *  @version 1.1
  */
 public class Person3 {
@@ -20,10 +20,11 @@ public class Person3 {
 	  name = pname;
 	}
 
-    public static void main(String args[]) {
-        Person3 person = new Person3("Jeff");
-        System.out.println(person.calc("Me"));
-    }
+    // public static void main(String args[]) {
+    //     Person3 person = new Person3("Jeff");
+    //     System.out.println(person.calc("Me"));
+    // }
+
 	/**
 	 * Return a string rep of this object
 	 * that varies with an input string
